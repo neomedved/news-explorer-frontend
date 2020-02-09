@@ -1,0 +1,17 @@
+@import url('__copyright/footer__copyright.css');
+@import url('__icon/footer__icon.css');
+@import url('__link/footer__link.css');
+@import url('__nav/footer__nav.css');
+@import url('__social/footer__social.css');
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 106px 0 104px;
+    margin: 0 auto 0;
+    height: 80px;
+    max-width: 1440px;
+    box-sizing: border-box;
+}

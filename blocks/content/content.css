@@ -1,0 +1,14 @@
+@import url('_author/content_author.css');
+@import url('_search/content_search.css');
+
+.content {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}

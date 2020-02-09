@@ -51,8 +51,12 @@ module.exports = {
       template: './html/saved-articles/index.html',
       filename: 'saved-articles/index.html',
     }),
-    new OptimizeCssAssetsPlugin({}),
-    new MiniCssExtractPlugin({ moduleFilename: ({ name }) => (name === 'main' ? 'style.[contenthash].css' : '[name]/style.[contenthash].css') }),
+    new OptimizeCssAssetsPlugin({
+      cssProcessorPluginOptions: {
+        preset: ['default', { discardComments: { removeAll: true } }],
+      },
+    }),
+    new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({ NODE_ENV: JSON.stringify(process.env.NODE_ENV) }),
   ],

@@ -11,7 +11,30 @@
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks['saved-articles'].css %>" type="text/css">
 </head>
 <body>
-    <h1><a href="/">NewsExplorer</a></h1>
+    <header class="header">
+        <a class="header__logo" href="../index.html"></a>
+        <nav class="header__nav">
+            <a class="header__link" href="../index.html">Главная</a>
+            <a class="header__link header__link_active" href="index.html">Сохранённые статьи</a>
+            <a class="header__login" href="index.html"><p class="header__user">Артем</p><div class="header__icon"></div></a>
+        </nav>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer class="footer">
+        <h2 class="footer__copyright">&copy; 2020 Артем Медведев, Powered by News API</h2>
+        <nav class="footer__nav">
+            <a class="footer__link" href="../index.html">Главная</a>
+            <a class="footer__link" href="https://praktikum.yandex.ru">Яндекс.Практикум</a>
+            <div class="footer__social">
+                <a class="footer__icon footer__icon_github" href="https://github.com/neomedved"></a>
+                <a class="footer__icon footer__icon_facebook" href="https://www.facebook.com/at.medvedev"></a>
+            </div>
+        </nav>
+    </footer>
 
     <script src="<%=htmlWebpackPlugin.files.chunks['saved-articles'].entry %>"></script>
 </body>

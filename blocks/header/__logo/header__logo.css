@@ -1,0 +1,12 @@
+.header__logo {
+    margin: 30px 0 0;
+    display: block;
+    width: 200px;
+    height: 24px;
+    background-image: url('../../../images/NewsExplorer_black.svg');
+    background-size: contain;
+}
+
+.header__logo_white {
+    background-image: url('../../../images/NewsExplorer_white.svg');
+}

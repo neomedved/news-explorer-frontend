@@ -1,0 +1,9 @@
+@import url('_facebook/footer__icon_facebook.css');
+@import url('_github/footer__icon_github.css');
+
+.footer__icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
