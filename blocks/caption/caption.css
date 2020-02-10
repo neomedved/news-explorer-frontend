@@ -1,0 +1,12 @@
+@import url('__cards/caption__cards.css');
+
+.caption {
+    font-family: 'Roboto Slab';
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}

@@ -18,7 +18,7 @@
     width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
-    margin: 0 auto 0;
+    margin: 0 auto;
     border: 1px solid #d1d2d6;
     border-top: none;
 }
@@ -32,6 +32,7 @@
 }
 
 .header_white {
+    top: 0;
     left: 0;
     right: 0;
     position: absolute;

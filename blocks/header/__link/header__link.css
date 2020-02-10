@@ -6,7 +6,7 @@
     margin: 0 0 0 34px;
     text-decoration: none;
     cursor: pointer;
-    color: black;
+    color: inherit;
 }
 
 .header__link_white {

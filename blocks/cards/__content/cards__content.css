@@ -1,0 +1,7 @@
+.cards__content {
+    margin: 0;
+    padding: 20px 24px 0px;
+    box-sizing: border-box;
+    height: 250px;
+    overflow: hidden;
+}

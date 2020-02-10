@@ -1,0 +1,12 @@
+.cards__source {
+    margin: 0;
+    padding: 10px 24px 24px;
+    display: block;
+    font-family: Roboto Slab;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #B6BCBF;
+    text-transform: uppercase;
+}

@@ -1,0 +1,9 @@
+.results__loading {
+    display: none;
+}
+
+.results_loading .results__loading {
+    display: block;
+    position: relative;
+    padding: 98px 0 0;
+}

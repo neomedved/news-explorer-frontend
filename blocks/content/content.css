@@ -1,5 +1,7 @@
 @import url('_author/content_author.css');
 @import url('_search/content_search.css');
+@import url('_info/content_info.css');
+@import url('__bold/content__bold.css');
 
 .content {
     display: block;

@@ -1,0 +1,7 @@
+.cards__background {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    background-color: white;
+    border-radius: 8px;
+}

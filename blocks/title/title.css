@@ -1,8 +1,12 @@
+@import url('_info/title_info.css');
+
 .title {
     font-family: 'Roboto Slab', sans-serif;
     font-size: 40px;
     line-height: 46px;
     font-weight: normal;
-    padding: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
     margin: 0;
 }

@@ -1,0 +1,31 @@
+.cards__hint {
+    position: absolute;
+    top: 0;
+    right: 45px;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 8px;
+    white-space: nowrap;
+    cursor: default;
+}
+
+.cards__hint_authorize {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 14px;
+}
+
+.cards__button:hover .cards__hint {
+    display: block;
+}
+
+.cards__button_unauthorized {
+    display: none;
+}

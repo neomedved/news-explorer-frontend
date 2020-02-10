@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Сервис, в котором можно найти новости по запросу и сохранить в личном кабинете.">
     <meta name="author" content="Артем Медведев">
-    <link rel="icon" href="<%=require('../../images/N.png')%>" type="image/png">
+    <link rel="icon" href="../<%=require('../../images/N.png')%>" type="image/png">
     <title>Сохранённые статьи</title>
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks['saved-articles'].css %>" type="text/css">
 </head>
@@ -21,6 +21,110 @@
     </header>
 
     <main>
+
+        <section class="info">
+            <div class="info__content">
+                <h1 class="subtitle">Сохранённые статьи</h1>
+                <h2 class="title title_info">Артем, у вас 5 сохранённых статей</h2>
+                <h3 class="content content_info">По ключевым словам: <span class="content__bold">Природа</span>, <span class="content__bold">Тайга</span> и <span class="content__bold">2 другим</span></h3>
+            </div>
+        </section>
+
+        <section class="articles">
+            <div class="cards__container">
+
+                <div class="cards__card">
+                    <picture class="cards__picture">
+                        <img class="cards__image" src="../<%=require('../../images/saved_01.png')%>" alt="Национальное достояние – парки">
+                    </picture>
+                    <div class="cards__background">
+                        <div class="cards__button cards__button_delete">
+                            <div class="cards__hint">Убрать из сохранённых</div>
+                        </div>
+                    </div>
+                    <span class="cards__keyword">Природа</span>
+                    <div class="cards__content">
+                        <span class="subtitle">2 августа, 2019</span>
+                        <h2 class="caption caption__cards">Национальное достояние – парки</h2>
+                        <p class="cards__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                    </div>
+                    <a class="cards__source" href="https://zen.yandex.ru">Дзен</a>
+                </div>
+
+                <div class="cards__card">
+                    <picture class="cards__picture">
+                        <img class="cards__image" src="../<%=require('../../images/saved_02.png')%>" alt="Лесные огоньки: история одной фотографии">
+                    </picture>
+                    <div class="cards__background">
+                        <div class="cards__button cards__button_delete">
+                            <div class="cards__hint">Убрать из сохранённых</div>
+                        </div>
+                    </div>
+                    <span class="cards__keyword">Природа</span>
+                    <div class="cards__content">
+                        <span class="subtitle">2 августа, 2019</span>
+                        <h2 class="caption caption__cards">Лесные огоньки: история одной фотографии</h2>
+                        <p class="cards__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+                    </div>
+                    <a class="cards__source" href="https://www.afisha.ru">Афиша</a>
+                </div>
+
+                <div class="cards__card">
+                    <picture class="cards__picture">
+                        <img class="cards__image" src="../<%=require('../../images/saved_03.png')%>" alt="«Первозданная тайга»: новый фотопроект Игоря Шпиленка">
+                    </picture>
+                    <div class="cards__background">
+                        <div class="cards__button cards__button_delete">
+                            <div class="cards__hint">Убрать из сохранённых</div>
+                        </div>
+                    </div>
+                    <span class="cards__keyword">Тайга</span>
+                    <div class="cards__content">
+                        <span class="subtitle">2 августа, 2019</span>
+                        <h2 class="caption caption__cards">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
+                        <p class="cards__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                    </div>
+                    <a class="cards__source" href="https://zona.media">Медиазона</a>
+                </div>
+
+                <div class="cards__card">
+                    <picture class="cards__picture">
+                        <img class="cards__image" src="../<%=require('../../images/saved_01.png')%>" alt="Национальное достояние – парки">
+                    </picture>
+                    <div class="cards__background">
+                        <div class="cards__button cards__button_delete">
+                            <div class="cards__hint">Убрать из сохранённых</div>
+                        </div>
+                    </div>
+                    <span class="cards__keyword">Парки</span>
+                    <div class="cards__content">
+                        <span class="subtitle">2 августа, 2019</span>
+                        <h2 class="caption caption__cards">Национальное достояние – парки</h2>
+                        <p class="cards__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                    </div>
+                    <a class="cards__source" href="https://zen.yandex.ru">Дзен</a>
+                </div>
+
+                <div class="cards__card">
+                    <picture class="cards__picture">
+                        <img class="cards__image" src="../<%=require('../../images/saved_02.png')%>" alt="Лесные огоньки: история одной фотографии">
+                    </picture>
+                    <div class="cards__background">
+                        <div class="cards__button cards__button_delete">
+                            <div class="cards__hint">Убрать из сохранённых</div>
+                        </div>
+                    </div>
+                    <span class="cards__keyword">Фотография</span>
+                    <div class="cards__content">
+                        <span class="subtitle">2 августа, 2019</span>
+                        <h2 class="caption caption__cards">Лесные огоньки: история одной фотографии</h2>
+                        <p class="cards__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+                    </div>
+                    <a class="cards__source" href="https://www.afisha.ru">Афиша</a>
+                </div>
+
+            </div>
+        </section>
 
     </main>
 

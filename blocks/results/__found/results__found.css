@@ -1,0 +1,11 @@
+.results__found {
+    padding: 62px 104px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: left;
+    display: none;
+}
+
+.results_found .results__found {
+    display: block;
+}

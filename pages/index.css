@@ -8,3 +8,12 @@
 @import url('../blocks/search/search.css');
 @import url('../blocks/headline/headline.css');
 @import url('../blocks/button/button.css');
+@import url('../blocks/preloader/preloader.css');
+@import url('../blocks/results/results.css');
+@import url('../blocks/cards/cards.css');
+@import url('../blocks/caption/caption.css');
+@import url('../blocks/subtile/subtitle.css');
+
+body {
+    color: #1A1B22;
+}

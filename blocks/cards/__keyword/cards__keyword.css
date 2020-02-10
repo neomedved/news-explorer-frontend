@@ -1,0 +1,13 @@
+.cards__keyword {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    margin: 0;
+    padding: 8px 17px;
+    background-color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 10px;
+}

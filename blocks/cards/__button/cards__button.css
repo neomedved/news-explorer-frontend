@@ -1,0 +1,20 @@
+@import url('_save/cards__button_save.css');
+@import url('_delete/cards__button_delete.css');
+
+.cards__button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.cards__button:hover {
+    opacity: 1;
+}
+
+.cards__button_saved {
+    opacity: 1;
+    background-image: url('../../../images/saved.svg');
+}

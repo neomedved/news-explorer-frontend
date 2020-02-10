@@ -7,7 +7,7 @@
     border-radius: 100px;
     text-decoration: none;
     cursor: pointer;
-    color: black;
+    color: inherit;
 }
 
 .header__login_white {
