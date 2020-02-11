@@ -13,6 +13,7 @@
     border-radius: 100px;
     color: white;
     cursor: pointer;
+    outline: none;
 }
 
 .button:hover {
@@ -27,4 +28,18 @@ form:invalid .button {
     background-color: #E6E8EB;
     color: #B6BCBF;
     box-shadow: none;
+}
+
+.button_results {
+    color: inherit;
+    background-color: white;
+    width: 288px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: none;
+}
+
+.button_results:hover {
+    background-color: white;
+    opacity: 0.9;
 }

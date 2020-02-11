@@ -1,0 +1,9 @@
+.results__not-found {
+    margin: 0;
+    padding: 6px 0 0;
+    display: none;
+}
+
+.results_not-found .results__not-found {
+    display: block;
+}

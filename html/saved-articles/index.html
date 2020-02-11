@@ -45,7 +45,7 @@
                     <span class="cards__keyword">Природа</span>
                     <div class="cards__content">
                         <span class="subtitle">2 августа, 2019</span>
-                        <h2 class="caption caption__cards">Национальное достояние – парки</h2>
+                        <h3 class="caption caption_cards">Национальное достояние – парки</h2>
                         <p class="cards__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
                     </div>
                     <a class="cards__source" href="https://zen.yandex.ru">Дзен</a>
@@ -63,7 +63,7 @@
                     <span class="cards__keyword">Природа</span>
                     <div class="cards__content">
                         <span class="subtitle">2 августа, 2019</span>
-                        <h2 class="caption caption__cards">Лесные огоньки: история одной фотографии</h2>
+                        <h3 class="caption caption_cards">Лесные огоньки: история одной фотографии</h2>
                         <p class="cards__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
                     </div>
                     <a class="cards__source" href="https://www.afisha.ru">Афиша</a>
@@ -81,7 +81,7 @@
                     <span class="cards__keyword">Тайга</span>
                     <div class="cards__content">
                         <span class="subtitle">2 августа, 2019</span>
-                        <h2 class="caption caption__cards">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
+                        <h3 class="caption caption_cards">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
                         <p class="cards__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
                     </div>
                     <a class="cards__source" href="https://zona.media">Медиазона</a>
@@ -99,7 +99,7 @@
                     <span class="cards__keyword">Парки</span>
                     <div class="cards__content">
                         <span class="subtitle">2 августа, 2019</span>
-                        <h2 class="caption caption__cards">Национальное достояние – парки</h2>
+                        <h3 class="caption caption_cards">Национальное достояние – парки</h2>
                         <p class="cards__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
                     </div>
                     <a class="cards__source" href="https://zen.yandex.ru">Дзен</a>
@@ -117,7 +117,7 @@
                     <span class="cards__keyword">Фотография</span>
                     <div class="cards__content">
                         <span class="subtitle">2 августа, 2019</span>
-                        <h2 class="caption caption__cards">Лесные огоньки: история одной фотографии</h2>
+                        <h3 class="caption caption_cards">Лесные огоньки: история одной фотографии</h2>
                         <p class="cards__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
                     </div>
                     <a class="cards__source" href="https://www.afisha.ru">Афиша</a>
@@ -125,6 +125,60 @@
 
             </div>
         </section>
+
+        <div class="popup popup_active">
+            <h2 class="popup__title">Вход</h2>
+            <div class="popup__close"></div>
+            <form class="popup__form" name="login">
+                <div class=popup__data>
+                    <div class="popup__field">
+                        <label class="popup__label" for="email">Email</label>
+                        <input class="popup__input" name="email" type="email" placeholder="Введите почту">
+                        <span class="popup__error">Неправильный формат</span>
+                    </div>
+                    <div class="popup__field">
+                        <label class="popup__label" for="password">Пароль</label>
+                        <input class="popup__input" name="password" type="password" placeholder="Введите пароль">
+                        <span class="popup__error">Неправильный формат</span>
+                    </div>
+                    <span class="popup__error popup__error_server">На сервере произошла ошибка</span>
+                </div>
+                <button class="button" name="button" type="submit">Войти</button>
+            </form>
+            <span class="popup__switch">или <a class="popup__link">Зарегистрироваться</a></span>
+        </div>
+
+        <div class="popup popup_active">
+            <h2 class="popup__title">Регистрация</h2>
+            <div class="popup__close"></div>
+            <form class="popup__form" name="signup">
+                <div class=popup__data>
+                    <div class="popup__field">
+                        <label class="popup__label" for="email">Email</label>
+                        <input class="popup__input" name="email" type="email" placeholder="Введите почту">
+                        <span class="popup__error">Неправильный формат</span>
+                    </div>
+                    <div class="popup__field">
+                        <label class="popup__label" for="password">Пароль</label>
+                        <input class="popup__input" name="password" type="password" placeholder="Введите пароль">
+                        <span class="popup__error">Неправильный формат</span>
+                    </div>
+                    <div class="popup__field">
+                        <label class="popup__label" for="name">Имя</label>
+                        <input class="popup__input" name="name" type="text" placeholder="Введите своё имя">
+                        <span class="popup__error">Неправильный формат</span>
+                    </div>
+                    <span class="popup__error popup__error_server">На сервере произошла ошибка</span>
+                </div>
+                <button class="button" name="button" type="submit">Зарегистрироваться</button>
+            </form>
+            <span class="popup__switch">или <a class="popup__link">Войти</a></span>
+
+            <div class="popup__success">
+                <h2 class="popup__title">Пользователь успешно зарегистрирован!</h2>
+                <span class="popup__switch popup__switch_success"><a class="popup__link popup__link_success">Выполнить вход</a></span>
+            </div>
+        </div>
 
     </main>
 

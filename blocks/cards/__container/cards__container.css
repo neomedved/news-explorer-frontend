@@ -7,3 +7,7 @@
     align-items: flex-end;
     justify-content: flex-start;
 }
+
+.cards__container_search {
+    padding: 62px 0;
+}

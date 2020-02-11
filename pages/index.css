@@ -13,6 +13,7 @@
 @import url('../blocks/cards/cards.css');
 @import url('../blocks/caption/caption.css');
 @import url('../blocks/subtile/subtitle.css');
+@import url('../blocks/popup/popup.css');
 
 body {
     color: #1A1B22;

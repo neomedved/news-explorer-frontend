@@ -1,0 +1,7 @@
+.results__icon {
+    height: 96px;
+    width: 96px;
+    background-image: url('../../../images/not-found.svg');
+    padding: 0;
+    margin: 0 auto;
+}

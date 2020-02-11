@@ -1,4 +1,4 @@
-@import url('__cards/caption__cards.css');
+@import url('_cards/caption_cards.css');
 
 .caption {
     font-family: 'Roboto Slab';
@@ -9,4 +9,8 @@
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
+}
+
+.caption_search {
+    padding-bottom: 16px;
 }
