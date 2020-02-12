@@ -1,12 +1,27 @@
 .header__logo {
     margin: 30px 0 0;
+    padding: 0;
     display: block;
-    width: 200px;
+    min-width: 200px;
     height: 24px;
     background-image: url('../../../images/NewsExplorer_black.svg');
     background-size: contain;
+    background-repeat: no-repeat;
+    outline: none;
 }
 
 .header__logo_white {
     background-image: url('../../../images/NewsExplorer_white.svg');
+}
+
+@media screen and (max-width: 1023px) {
+    .header__logo {
+        margin-top: 23px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .header__logo {
+        margin-top: 16px;
+    }
 }

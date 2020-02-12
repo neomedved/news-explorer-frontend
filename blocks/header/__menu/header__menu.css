@@ -1,0 +1,21 @@
+@media screen and (max-width: 719px) {
+    .header__menu {
+        width: 24px;
+        height: 24px;
+        margin-top: 16px;
+        background-image: url('../../../images/menu.svg');
+        background-size: contain;
+    }
+
+    .header__menu:hover {
+        background-image: url('../../../images/cross_black.svg');
+    }
+
+    .header__menu_white {
+        background-image: url('../../../images/menu_white.svg');
+    }
+
+    .header__menu_white:hover {
+        background-image: url('../../../images/cross.svg');
+    }
+}

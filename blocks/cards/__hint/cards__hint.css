@@ -29,3 +29,9 @@
 .cards__button_unauthorized {
     display: none;
 }
+
+@media screen and (max-width: 1023px) {
+    .cards__hint {
+        display: none;
+    }
+}

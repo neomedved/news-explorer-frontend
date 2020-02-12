@@ -1,0 +1,15 @@
+@media screen and (max-width: 719px) {
+    .header__background {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 56px;
+        height: 100vh;
+    }
+
+    .header__menu:hover .header__background {
+        display: block;
+    }
+}

@@ -1,6 +1,7 @@
 .popup__close {
     background-image: url('../../../images/cross.svg');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 40px;
     width: 40px;
     margin: 0;
