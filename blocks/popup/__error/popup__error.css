@@ -1,0 +1,21 @@
+.popup__error {
+    display: none;
+    color: red;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+}
+
+.popup__error_active {
+    display: block;
+}
+
+.popup__error_server {
+    right: 0;
+    bottom: 8px;
+    text-align: center;
+}

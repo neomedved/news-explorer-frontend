@@ -1,0 +1,16 @@
+.popup__form {
+    width: 430px;
+    background-color: white;
+    border-radius: 16px;
+    margin: 0;
+    padding: 34px 35px 28px;
+    position: relative;
+}
+
+.popup__form_hidden {
+    display: none;
+}
+
+.popup__form_success {
+    padding: 43px 35px 51px;
+}

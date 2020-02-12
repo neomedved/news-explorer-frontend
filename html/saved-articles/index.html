@@ -126,58 +126,64 @@
             </div>
         </section>
 
-        <div class="popup popup_active">
-            <h2 class="popup__title">Вход</h2>
-            <div class="popup__close"></div>
-            <form class="popup__form" name="login">
+        <div class="popup">
+            <form class="popup__form" name="login" novalidate>
+                <div class="popup__close"></div>
+
+                <h2 class="popup__title">Вход</h2>
+
                 <div class=popup__data>
                     <div class="popup__field">
                         <label class="popup__label" for="email">Email</label>
-                        <input class="popup__input" name="email" type="email" placeholder="Введите почту">
-                        <span class="popup__error">Неправильный формат</span>
+                        <input class="popup__input" name="email" type="email" placeholder="Введите почту" required>
+                        <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
                         <label class="popup__label" for="password">Пароль</label>
-                        <input class="popup__input" name="password" type="password" placeholder="Введите пароль">
-                        <span class="popup__error">Неправильный формат</span>
+                        <input class="popup__input" name="password" type="password" placeholder="Введите пароль" required>
+                        <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
-                    <span class="popup__error popup__error_server">На сервере произошла ошибка</span>
+                    <span class="popup__error popup__error_active popup__error_server">На сервере произошла ошибка</span>
                 </div>
-                <button class="button" name="button" type="submit">Войти</button>
+                <button class="button button_popup" name="button" type="submit">Войти</button>
+                <span class="popup__switch">или <a class="popup__link">Зарегистрироваться</a></span>
             </form>
-            <span class="popup__switch">или <a class="popup__link">Зарегистрироваться</a></span>
         </div>
 
-        <div class="popup popup_active">
-            <h2 class="popup__title">Регистрация</h2>
-            <div class="popup__close"></div>
-            <form class="popup__form" name="signup">
+        <div class="popup">
+            <form class="popup__form" name="signup" novalidate>
+                <div class="popup__close"></div>
+
+                <h2 class="popup__title">Регистрация</h2>
+
                 <div class=popup__data>
                     <div class="popup__field">
                         <label class="popup__label" for="email">Email</label>
-                        <input class="popup__input" name="email" type="email" placeholder="Введите почту">
-                        <span class="popup__error">Неправильный формат</span>
+                        <input class="popup__input" name="email" type="email" placeholder="Введите почту" required>
+                        <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
                         <label class="popup__label" for="password">Пароль</label>
-                        <input class="popup__input" name="password" type="password" placeholder="Введите пароль">
-                        <span class="popup__error">Неправильный формат</span>
+                        <input class="popup__input" name="password" type="password" placeholder="Введите пароль" required>
+                        <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
                         <label class="popup__label" for="name">Имя</label>
-                        <input class="popup__input" name="name" type="text" placeholder="Введите своё имя">
-                        <span class="popup__error">Неправильный формат</span>
+                        <input class="popup__input" name="name" type="text" placeholder="Введите своё имя" required>
+                        <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
-                    <span class="popup__error popup__error_server">На сервере произошла ошибка</span>
+                    <span class="popup__error popup__error_active popup__error_server">На сервере произошла ошибка</span>
                 </div>
-                <button class="button" name="button" type="submit">Зарегистрироваться</button>
+                <button class="button button_popup" name="button" type="submit">Зарегистрироваться</button>
+                <span class="popup__switch">или <a class="popup__link">Войти</a></span>
             </form>
-            <span class="popup__switch">или <a class="popup__link">Войти</a></span>
-
-            <div class="popup__success">
+            
+            <div class="popup__form popup__form_success popup__form_hidden">
+                <div class="popup__close"></div>
                 <h2 class="popup__title">Пользователь успешно зарегистрирован!</h2>
                 <span class="popup__switch popup__switch_success"><a class="popup__link popup__link_success">Выполнить вход</a></span>
             </div>
+            
         </div>
 
     </main>
