@@ -6,7 +6,6 @@
     box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
     padding: 21px 0;
     background-color: #2F71E5;
-    margin: 0;
     font-size: 18px;
     line-height: 24px;
     font-family: 'Roboto', sans-serif;
@@ -43,4 +42,10 @@ form:invalid .button {
 .button_results:hover {
     background-color: white;
     opacity: 0.9;
+}
+
+@media screen and (max-width: 1023px) {
+    .button_search {
+        padding: 17px 0 17px;
+    }
 }

@@ -3,3 +3,17 @@
     right: -1px;
     width: 168px;
 }
+
+@media screen and (max-width: 1023px) {
+    .button_search {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .button_search {
+        position: static;
+        width: 100%;
+        margin-top: 16px;
+    }
+}

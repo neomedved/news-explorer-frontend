@@ -15,8 +15,10 @@
     <header class="header header_white">
         <a class="header__logo header__logo_white" href="index.html"></a>
         <div class="header__menu  header__menu_white">
+            <div class="header__close"></div>
             <div class="header__background">
                 <nav class="header__nav header__nav_white">
+                    <div class="header__cover"></div>
                     <a class="header__link header__link_active header__link_white" href="index.html">Главная</a>
                     <a class="header__link header__link_white" href="saved-articles/index.html">Сохранённые статьи</a>
                     <a class="header__login header__login_white" href="saved-articles/index.html"><span class="header__user">Артем</span><div class="header__icon header__icon_white"></div></a>
@@ -28,12 +30,14 @@
     <main>
 
         <section class="search">
-            <h1 class="headline">Что в мире творится?</h1>
-            <h2 class="content content_search">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h2>
-            <form class="search__form" name="search" novalidate>
-                <input class=search__input type="text" name="request" placeholder="Введите тему новости">
-                <button class="button button_search" name="button" type="submit">Искать</button>
-            </form>
+            <div class="search__content">
+                <h1 class="headline">Что в мире творится?</h1>
+                <h2 class="content content_search">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h2>
+                <form class="search__form" name="search" novalidate>
+                    <input class=search__input type="text" name="request" placeholder="Введите тему новости">
+                    <button class="button button_search" name="button" type="submit">Искать</button>
+                </form>
+            </div>
         </section>
 
         <section class="results results_found">

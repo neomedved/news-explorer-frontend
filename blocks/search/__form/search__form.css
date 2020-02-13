@@ -4,3 +4,15 @@
     padding: 64px 0 0;
     position: relative;
 }
+
+@media screen and (max-width: 1023px) {
+    .search__form {
+        padding-top: 48px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .search__form {
+        padding-top: 122px;
+    }
+}
