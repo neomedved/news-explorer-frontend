@@ -1,5 +1,8 @@
+@import url('_search/cards__container_search.css');
+
 .cards__container {
-    padding: 0;
+    padding-right: 0;
+    padding-left: 0;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -8,6 +11,10 @@
     justify-content: flex-start;
 }
 
-.cards__container_search {
-    padding: 62px 0;
+@media screen and (max-width: 719px) {
+    .cards__container {
+        flex-direction: column;
+        max-width: 480px;
+        margin: 0 auto;
+    }
 }

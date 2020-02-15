@@ -1,3 +1,9 @@
 .content_author {
     padding-top: 24px;
 }
+
+@media screen and (max-width: 719px) {
+    .content_author {
+        padding-top: 16px;
+    }
+}

@@ -48,7 +48,7 @@
 
                 <div class="cards__container cards__container_search">
 
-                    <div class="cards__card">
+                    <a class="cards__card" href="https://lenta.ru">
                         <picture class="cards__picture">
                             <img class="cards__image" src="<%=require('../images/main_01.png')%>" alt="Национальное достояние – парки">
                         </picture>
@@ -59,13 +59,13 @@
                         </div>
                         <div class="cards__content">
                             <span class="subtitle">2 августа, 2019</span>
-                            <h3 class="caption caption_cards">Национальное достояние – парки</h2>
+                            <h3 class="caption caption_cards">Национальное достояние – парки</h3>
                             <p class="cards__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
                         </div>
-                        <a class="cards__source" href="https://lenta.ru">Лента.ру</a>
-                    </div>
+                        <span class="cards__source">Лента.ру</span>
+                    </a>
 
-                    <div class="cards__card">
+                    <a class="cards__card" href="https://meduza.io">
                         <picture class="cards__picture">
                             <img class="cards__image" src="<%=require('../images/main_02.png')%>" alt="Лесные огоньки: история одной фотографии">
                         </picture>
@@ -76,13 +76,13 @@
                         </div>
                         <div class="cards__content">
                             <span class="subtitle">2 августа, 2019</span>
-                            <h3 class="caption caption_cards">Лесные огоньки: история одной фотографии</h2>
+                            <h3 class="caption caption_cards">Лесные огоньки: история одной фотографии</h3>
                             <p class="cards__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
                         </div>
-                        <a class="cards__source" href="https://meduza.io">Медуза</a>
-                    </div>
+                        <span class="cards__source">Медуза</span>
+                    </a>
 
-                    <div class="cards__card">
+                    <a class="cards__card" href="https://ria.ru">
                         <picture class="cards__picture">
                             <img class="cards__image" src="<%=require('../images/main_03.png')%>" alt="«Первозданная тайга»: новый фотопроект Игоря Шпиленка">
                         </picture>
@@ -93,11 +93,11 @@
                         </div>
                         <div class="cards__content">
                             <span class="subtitle">2 августа, 2019</span>
-                            <h3 class="caption caption_cards">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
+                            <h3 class="caption caption_cards">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
                             <p class="cards__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
                         </div>
-                        <a class="cards__source" href="https://ria.ru">РИА</a>
-                    </div>
+                        <span class="cards__source">РИА</span>
+                    </a>
 
                 </div>
 
@@ -134,54 +134,54 @@
         </section>
 
         <div class="popup">
-            <form class="popup__form" name="login" novalidate>
+            <form class="popup__form" name="login" id="login" novalidate>
                 <div class="popup__close"></div>
 
                 <h2 class="popup__title">Вход</h2>
 
                 <div class=popup__data>
                     <div class="popup__field">
-                        <label class="popup__label" for="email">Email</label>
-                        <input class="popup__input" name="email" type="email" placeholder="Введите почту" required>
+                        <label class="popup__label" for="login-email">Email</label>
+                        <input class="popup__input" name="email" id="login-email" type="email" placeholder="Введите почту" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
-                        <label class="popup__label" for="password">Пароль</label>
-                        <input class="popup__input" name="password" type="password" placeholder="Введите пароль" required>
+                        <label class="popup__label" for="login-password">Пароль</label>
+                        <input class="popup__input" name="password" id="login-password" type="password" placeholder="Введите пароль" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <span class="popup__error popup__error_active popup__error_server">На сервере произошла ошибка</span>
                 </div>
-                <button class="button button_popup" name="button" type="submit">Войти</button>
+                <button class="button button_popup" name="button" id="login-button" type="submit">Войти</button>
                 <span class="popup__switch">или <a class="popup__link">Зарегистрироваться</a></span>
             </form>
         </div>
 
         <div class="popup">
-            <form class="popup__form" name="signup" novalidate>
+            <form class="popup__form" name="signup" id="signup" novalidate>
                 <div class="popup__close"></div>
 
                 <h2 class="popup__title">Регистрация</h2>
 
                 <div class=popup__data>
                     <div class="popup__field">
-                        <label class="popup__label" for="email">Email</label>
-                        <input class="popup__input" name="email" type="email" placeholder="Введите почту" required>
+                        <label class="popup__label" for="signup-email">Email</label>
+                        <input class="popup__input" name="email" id="signup-email" type="email" placeholder="Введите почту" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
-                        <label class="popup__label" for="password">Пароль</label>
-                        <input class="popup__input" name="password" type="password" placeholder="Введите пароль" required>
+                        <label class="popup__label" for="signup-password">Пароль</label>
+                        <input class="popup__input" name="password" id="signup-password" type="password" placeholder="Введите пароль" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
-                        <label class="popup__label" for="name">Имя</label>
-                        <input class="popup__input" name="name" type="text" placeholder="Введите своё имя" required>
+                        <label class="popup__label" for="signup-name">Имя</label>
+                        <input class="popup__input" name="name" id="signup-name" type="text" placeholder="Введите своё имя" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <span class="popup__error popup__error_active popup__error_server">На сервере произошла ошибка</span>
                 </div>
-                <button class="button button_popup" name="button" type="submit">Зарегистрироваться</button>
+                <button class="button button_popup" name="button" id="signup-button" type="submit">Зарегистрироваться</button>
                 <span class="popup__switch">или <a class="popup__link">Войти</a></span>
             </form>
             

@@ -6,6 +6,10 @@
     background-color: white;
     border-radius: 16px;
     overflow: hidden;
+    display: block;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
 }
 
 .cards__card:nth-of-type(3n) {
@@ -16,6 +20,13 @@
     margin-top: 16px;
 }
 
+@media screen and (max-width: 719px) {
+    .cards__card, .cards__card:nth-of-type(3n), .cards__card:nth-of-type(3n+1) {
+        width: 100%;
+        margin: 10px 0 0;
+    }
+}
+
 .cards__card:first-of-type {
     margin-top: 0;
-} 
+}

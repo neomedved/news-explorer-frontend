@@ -26,12 +26,12 @@
     display: block;
 }
 
-.cards__button_unauthorized {
+.cards__button_authorized .cards__hint {
     display: none;
 }
 
-@media screen and (max-width: 1023px) {
-    .cards__hint {
+@media screen and (max-width: 1279px) {
+    .cards__button:hover .cards__hint {
         display: none;
     }
 }

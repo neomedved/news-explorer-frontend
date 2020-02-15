@@ -1,4 +1,5 @@
 @import url('_cards/caption_cards.css');
+@import url('_search/caption_search.css');
 
 .caption {
     font-family: 'Roboto Slab';
@@ -6,11 +7,20 @@
     font-size: 26px;
     line-height: 30px;
     margin: 0;
-    padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
 }
 
-.caption_search {
-    padding-bottom: 16px;
+@media screen and (max-width: 1023px) {
+    .caption {
+        font-size: 22px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .caption {
+        font-size: 22px;
+        line-height: 26px;
+    }
 }

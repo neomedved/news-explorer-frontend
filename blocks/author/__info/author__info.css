@@ -1,5 +1,20 @@
 .author__info {
-    padding: 51px 0 0;
+    padding: 51px 0 0 56px;
     margin: 0;
-    width: 600px;
+    max-width: 600px;
+    min-width: 323px;
+}
+
+@media screen and (max-width: 1023px) {
+    .author__info {
+        max-width: 100%;
+        padding: 0 0 0 32px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .author__info {
+        padding: 24px 0 0;
+        min-width: 288px;
+    }
 }
