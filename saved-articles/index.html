@@ -8,23 +8,27 @@
     <meta name="author" content="Артем Медведев">
     <link rel="icon" href=".././images/N.png" type="image/png">
     <title>Сохранённые статьи</title>
-    <link rel="stylesheet" href="../saved-articles.84c66da7e558fb576a2c.css?94e7c1dd39c2e1398f50" type="text/css">
+    <link rel="stylesheet" href="../saved-articles.40f1102be8abce89ea38.css?836e60d6ea3b4f503d71" type="text/css">
 </head>
 <body>
     <header class="header">
         <a class="header__logo" href="../index.html"></a>
-        <nav class="header__nav">
-            <a class="header__link" href="../index.html">Главная</a>
-            <a class="header__link header__link_active" href="index.html">Сохранённые статьи</a>
-            <a class="header__login" href="index.html"><p class="header__user">Артем</p><div class="header__icon"></div></a>
-        </nav>
+        <div class="header__menu">
+            <div class="header__background">
+                <nav class="header__nav">
+                    <a class="header__link" href="../index.html">Главная</a>
+                    <a class="header__link header__link_active" href="index.html">Сохранённые статьи</a>
+                    <a class="header__login" href="index.html"><span class="header__user">Артем</span><div class="header__icon"></div></a>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
 
         <section class="info">
             <div class="info__content">
-                <h1 class="subtitle">Сохранённые статьи</h1>
+                <h1 class="subtitle subtitle_saved">Сохранённые статьи</h1>
                 <h2 class="title title_info">Артем, у вас 5 сохранённых статей</h2>
                 <h3 class="content content_info">По ключевым словам: <span class="content__bold">Природа</span>, <span class="content__bold">Тайга</span> и <span class="content__bold">2 другим</span></h3>
             </div>
@@ -45,7 +49,7 @@
                     <span class="cards__keyword">Природа</span>
                     <div class="cards__content">
                         <span class="subtitle">2 августа, 2019</span>
-                        <h3 class="caption caption_cards">Национальное достояние – парки</h2>
+                        <h3 class="caption caption_cards">Национальное достояние – парки</h3>
                         <p class="cards__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
                     </div>
                     <a class="cards__source" href="https://zen.yandex.ru">Дзен</a>
@@ -63,7 +67,7 @@
                     <span class="cards__keyword">Природа</span>
                     <div class="cards__content">
                         <span class="subtitle">2 августа, 2019</span>
-                        <h3 class="caption caption_cards">Лесные огоньки: история одной фотографии</h2>
+                        <h3 class="caption caption_cards">Лесные огоньки: история одной фотографии</h3>
                         <p class="cards__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
                     </div>
                     <a class="cards__source" href="https://www.afisha.ru">Афиша</a>
@@ -81,7 +85,7 @@
                     <span class="cards__keyword">Тайга</span>
                     <div class="cards__content">
                         <span class="subtitle">2 августа, 2019</span>
-                        <h3 class="caption caption_cards">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
+                        <h3 class="caption caption_cards">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
                         <p class="cards__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
                     </div>
                     <a class="cards__source" href="https://zona.media">Медиазона</a>
@@ -99,7 +103,7 @@
                     <span class="cards__keyword">Парки</span>
                     <div class="cards__content">
                         <span class="subtitle">2 августа, 2019</span>
-                        <h3 class="caption caption_cards">Национальное достояние – парки</h2>
+                        <h3 class="caption caption_cards">Национальное достояние – парки</h3>
                         <p class="cards__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
                     </div>
                     <a class="cards__source" href="https://zen.yandex.ru">Дзен</a>
@@ -117,7 +121,7 @@
                     <span class="cards__keyword">Фотография</span>
                     <div class="cards__content">
                         <span class="subtitle">2 августа, 2019</span>
-                        <h3 class="caption caption_cards">Лесные огоньки: история одной фотографии</h2>
+                        <h3 class="caption caption_cards">Лесные огоньки: история одной фотографии</h3>
                         <p class="cards__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
                     </div>
                     <a class="cards__source" href="https://www.afisha.ru">Афиша</a>
@@ -127,7 +131,7 @@
         </section>
 
         <div class="popup">
-            <form class="popup__form" name="login" novalidate>
+            <form class="popup__form" name="login" id="login" novalidate>
                 <div class="popup__close"></div>
 
                 <h2 class="popup__title">Вход</h2>
@@ -135,23 +139,23 @@
                 <div class=popup__data>
                     <div class="popup__field">
                         <label class="popup__label" for="email">Email</label>
-                        <input class="popup__input" name="email" type="email" placeholder="Введите почту" required>
+                        <input class="popup__input" name="email" id="email" type="email" placeholder="Введите почту" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
                         <label class="popup__label" for="password">Пароль</label>
-                        <input class="popup__input" name="password" type="password" placeholder="Введите пароль" required>
+                        <input class="popup__input" name="password" type="password" id="password" placeholder="Введите пароль" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <span class="popup__error popup__error_active popup__error_server">На сервере произошла ошибка</span>
                 </div>
-                <button class="button button_popup" name="button" type="submit">Войти</button>
+                <button class="button button_popup" name="button" id="button" type="submit">Войти</button>
                 <span class="popup__switch">или <a class="popup__link">Зарегистрироваться</a></span>
             </form>
         </div>
 
         <div class="popup">
-            <form class="popup__form" name="signup" novalidate>
+            <form class="popup__form" name="signup" id="signup" novalidate>
                 <div class="popup__close"></div>
 
                 <h2 class="popup__title">Регистрация</h2>
@@ -159,22 +163,22 @@
                 <div class=popup__data>
                     <div class="popup__field">
                         <label class="popup__label" for="email">Email</label>
-                        <input class="popup__input" name="email" type="email" placeholder="Введите почту" required>
+                        <input class="popup__input" name="email" id="email" type="email" placeholder="Введите почту" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
                         <label class="popup__label" for="password">Пароль</label>
-                        <input class="popup__input" name="password" type="password" placeholder="Введите пароль" required>
+                        <input class="popup__input" name="password" id="password" type="password" placeholder="Введите пароль" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
                         <label class="popup__label" for="name">Имя</label>
-                        <input class="popup__input" name="name" type="text" placeholder="Введите своё имя" required>
+                        <input class="popup__input" name="name" id="name" type="text" placeholder="Введите своё имя" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <span class="popup__error popup__error_active popup__error_server">На сервере произошла ошибка</span>
                 </div>
-                <button class="button button_popup" name="button" type="submit">Зарегистрироваться</button>
+                <button class="button button_popup" name="button" id="button" type="submit">Зарегистрироваться</button>
                 <span class="popup__switch">или <a class="popup__link">Войти</a></span>
             </form>
             
@@ -200,6 +204,6 @@
         </nav>
     </footer>
 
-    <script src="../saved-articles/saved-articles.d5d59611a864ed1a9ec3.js?94e7c1dd39c2e1398f50"></script>
+    <script src="../saved-articles/saved-articles.d5d59611a864ed1a9ec3.js?836e60d6ea3b4f503d71"></script>
 </body>
 </html>
