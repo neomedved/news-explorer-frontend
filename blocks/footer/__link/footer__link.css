@@ -8,3 +8,9 @@
     padding: 0 18px 0;
     outline: none;
 }
+
+@media screen and (max-width: 719px) {
+    .footer__link {
+        padding: 0;
+    }
+}

@@ -11,3 +11,15 @@
     text-transform: uppercase;
     outline: none;
 }
+
+@media screen and (max-width: 1023px) {
+    .cards__source {
+        padding: 12px 16px 0;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .cards__source {
+        padding-top: 8px;
+    }
+}

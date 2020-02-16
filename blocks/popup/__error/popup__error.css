@@ -19,3 +19,10 @@
     bottom: 8px;
     text-align: center;
 }
+
+@media screen and (max-width: 719px) {
+    .popup__error_server {
+        bottom: 4px;
+    }
+}
+

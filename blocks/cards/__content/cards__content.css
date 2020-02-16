@@ -5,3 +5,16 @@
     height: 250px;
     overflow: hidden;
 }
+
+@media screen and (max-width: 1023px) {
+    .cards__content {
+        padding: 16px 16px 0;
+        height: 222px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .cards__content {
+        height: 200px;
+    }
+}

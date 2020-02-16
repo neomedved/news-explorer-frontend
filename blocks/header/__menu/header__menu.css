@@ -8,6 +8,7 @@
         background-image: url('../../../images/menu.svg');
         background-size: contain;
         background-repeat: no-repeat;
+        cursor: pointer;
     }
 
     .header__menu:hover {

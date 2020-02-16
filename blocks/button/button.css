@@ -46,6 +46,18 @@ form:invalid .button {
 
 @media screen and (max-width: 1023px) {
     .button_search {
-        padding: 17px 0 17px;
+        padding: 17px 0;
+    }
+
+    .button_results {
+        padding: 17px 0;
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .button_results {
+        width: 100%;
+        max-width: 480px;
     }
 }

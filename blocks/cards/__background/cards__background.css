@@ -5,3 +5,17 @@
     background-color: white;
     border-radius: 8px;
 }
+
+@media screen and (max-width: 1023px) {
+    .cards__background {
+        top: 8px;
+        right: 8px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .cards__background {
+        top: 16px;
+        right: 16px;
+    }
+}

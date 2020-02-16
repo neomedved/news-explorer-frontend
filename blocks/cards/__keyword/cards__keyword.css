@@ -11,3 +11,17 @@
     line-height: 24px;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 1023px) {
+    .cards__keyword {
+        top: 8px;
+        left: 8px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .cards__keyword {
+        top: 16px;
+        left: 16px;
+    }
+}

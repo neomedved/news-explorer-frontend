@@ -11,3 +11,25 @@
     top: -46px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1023px) {
+    .popup__close {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .popup__close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        right: 16px;
+        top: -40px;
+        background-color: black;
+    }
+
+    .popup__close_black {
+        background-image: url('../../../images/cross_black.svg');
+        background-color: white;
+    }
+}
