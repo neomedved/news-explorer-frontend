@@ -1,1 +1,1 @@
-import '../../pages/saved-articles/index.css';
+import '../pages/saved-articles/index.css';

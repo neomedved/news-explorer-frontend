@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssUrlRelativePlugin = require('css-url-relative-plugin');
 
 module.exports = {
   entry: {
@@ -32,9 +33,7 @@ module.exports = {
       test: /\.(png|jpg|gif|ico|svg)$/,
       use: [
         'file-loader?name=./images/[name].[ext]',
-        {
-          loader: 'image-webpack-loader',
-        },
+        { loader: 'image-webpack-loader' },
       ],
     }],
   },
@@ -42,13 +41,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
-      template: './html/index.html',
+      template: './src/html/index.html',
       filename: 'index.html',
     }),
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
-      template: './html/saved-articles/index.html',
+      template: './src/html/saved-articles/index.html',
       filename: 'saved-articles/index.html',
     }),
     new OptimizeCssAssetsPlugin({
@@ -56,7 +55,8 @@ module.exports = {
         preset: ['default', { discardComments: { removeAll: true } }],
       },
     }),
-    new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
+    new CssUrlRelativePlugin({}),
+    new MiniCssExtractPlugin({ filename: 'styles/[name].[contenthash].css' }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({ NODE_ENV: JSON.stringify(process.env.NODE_ENV) }),
   ],
