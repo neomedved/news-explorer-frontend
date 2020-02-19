@@ -35,7 +35,7 @@
                 <h2 class="content content_search">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h2>
                 <form class="search__form" name="search" novalidate>
                     <input class=search__input type="text" name="request" placeholder="Введите тему новости">
-                    <button class="button button_search" name="button" type="submit">Искать</button>
+                    <button class="button button_search" name="search" id="search" type="submit">Искать</button>
                 </form>
             </div>
         </section>
@@ -46,16 +46,16 @@
 
                 <h2 class="title">Результаты поиска</h2>
 
-                <div class="cards__container cards__container_search">
+                <div class="cards cards_search">
 
                     <a class="cards__card" href="https://lenta.ru" target="_blank">
                         <picture class="cards__picture">
                             <img class="cards__image" src="<%=require('../images/main_01.png')%>" alt="Национальное достояние – парки">
                         </picture>
                         <div class="cards__background">
-                            <div class="cards__button cards__button_save">
-                                <div class="cards__hint cards__hint_authorize">Войдите, чтобы сохранять статьи</div>
-                            </div>
+                            <button class="cards__button cards__button_save" name="save" type="button">
+                                <span class="cards__hint cards__hint_authorize">Войдите, чтобы сохранять статьи</span>
+                            </button>
                         </div>
                         <div class="cards__content">
                             <span class="subtitle">2 августа, 2019</span>
@@ -70,9 +70,9 @@
                             <img class="cards__image" src="<%=require('../images/main_02.png')%>" alt="Лесные огоньки: история одной фотографии">
                         </picture>
                         <div class="cards__background">
-                            <div class="cards__button cards__button_save">
-                                <div class="cards__hint cards__hint_authorize">Войдите, чтобы сохранять статьи</div>
-                            </div>
+                            <button class="cards__button cards__button_save" name="save" type="button">
+                                <span class="cards__hint cards__hint_authorize">Войдите, чтобы сохранять статьи</span>
+                            </button>
                         </div>
                         <div class="cards__content">
                             <span class="subtitle">2 августа, 2019</span>
@@ -87,9 +87,9 @@
                             <img class="cards__image" src="<%=require('../images/main_03.png')%>" alt="«Первозданная тайга»: новый фотопроект Игоря Шпиленка">
                         </picture>
                         <div class="cards__background">
-                            <div class="cards__button cards__button_save">
-                                <div class="cards__hint cards__hint_authorize">Войдите, чтобы сохранять статьи</div>
-                            </div>
+                            <button class="cards__button cards__button_save" name="save" type="button">
+                                <span class="cards__hint cards__hint_authorize">Войдите, чтобы сохранять статьи</span>
+                            </button>
                         </div>
                         <div class="cards__content">
                             <span class="subtitle">2 августа, 2019</span>
@@ -101,7 +101,7 @@
 
                 </div>
 
-                <button class="button button_results" type="button">Показать еще</button>
+                <button class="button button_results" name="more" id="more" type="button">Показать еще</button>
 
             </div>
 
@@ -135,19 +135,19 @@
 
         <div class="popup">
             <form class="popup__form" name="login" id="login" novalidate>
-                <div class="popup__close"></div>
+                <button class="popup__close" name="close" type="button"></button>
 
                 <h2 class="popup__title">Вход</h2>
 
                 <div class=popup__data>
                     <div class="popup__field">
                         <label class="popup__label" for="login-email">Email</label>
-                        <input class="popup__input" name="email" id="login-email" type="email" placeholder="Введите почту" required>
+                        <input class="popup__input" name="email" id="login-email" type="email" placeholder="Введите почту" pattern="\w+@\w+\.\w+" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
                         <label class="popup__label" for="login-password">Пароль</label>
-                        <input class="popup__input" name="password" id="login-password" type="password" placeholder="Введите пароль" required>
+                        <input class="popup__input" name="password" id="login-password" type="password" placeholder="Введите пароль" minlength="6" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <span class="popup__error popup__error_active popup__error_server">На сервере произошла ошибка</span>
@@ -159,24 +159,24 @@
 
         <div class="popup">
             <form class="popup__form" name="signup" id="signup" novalidate>
-                <div class="popup__close"></div>
+                <button class="popup__close" name="close" type="button"></button>
 
                 <h2 class="popup__title">Регистрация</h2>
 
                 <div class=popup__data>
                     <div class="popup__field">
                         <label class="popup__label" for="signup-email">Email</label>
-                        <input class="popup__input" name="email" id="signup-email" type="email" placeholder="Введите почту" required>
+                        <input class="popup__input" name="email" id="signup-email" type="email" placeholder="Введите почту" pattern="\w+@\w+\.\w+" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
                         <label class="popup__label" for="signup-password">Пароль</label>
-                        <input class="popup__input" name="password" id="signup-password" type="password" placeholder="Введите пароль" required>
+                        <input class="popup__input" name="password" id="signup-password" type="password" placeholder="Введите пароль" minlength="6" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
                         <label class="popup__label" for="signup-name">Имя</label>
-                        <input class="popup__input" name="name" id="signup-name" type="text" placeholder="Введите своё имя" required>
+                        <input class="popup__input" name="name" id="signup-name" type="text" placeholder="Введите своё имя" minlength="2" maxlength="30" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <span class="popup__error popup__error_active popup__error_server">На сервере произошла ошибка</span>
@@ -186,7 +186,7 @@
             </form>
             
             <div class="popup__form popup__form_success popup__form_hidden">
-                <div class="popup__close"></div>
+                <button class="popup__close" name="close" type="button"></button>
                 <h2 class="popup__title">Пользователь успешно зарегистрирован!</h2>
                 <span class="popup__switch popup__switch_success"><a class="popup__link popup__link_success">Выполнить вход</a></span>
             </div>

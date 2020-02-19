@@ -1,15 +1,15 @@
-.cards__container_search {
+.cards_search {
     padding: 62px 0;
 }
 
 @media screen and (max-width: 1023px) {
-    .cards__container_search {
+    .cards_search {
         padding: 32px 0;
     }
 }
 
 @media screen and (max-width: 719px) {
-    .cards__container_search {
+    .cards_search {
         padding: 24px 0 15px;
     }
 }

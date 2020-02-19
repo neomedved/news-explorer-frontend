@@ -1,7 +1,7 @@
 @import url('_info/title_info.css');
 
 .title {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
     font-size: 40px;
     line-height: 46px;
     font-weight: normal;

@@ -10,6 +10,8 @@
     right: -46px;
     top: -46px;
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
 @media screen and (max-width: 1023px) {

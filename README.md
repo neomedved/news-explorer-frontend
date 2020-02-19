@@ -2,6 +2,7 @@
 ###### v1.0.0
 ### Сервис, в котором можно найти новости по запросу и сохранить в личном кабинете.
 ## [Домашняя страница](https://news.neomedved.site/)
+## [Github Pages](https://github.io/news-explorer-frontend)
 ### Запуск проекта:
 * Установка зависмостей: ```npm install```
 * Создание production-сборки: ```npm run build```
