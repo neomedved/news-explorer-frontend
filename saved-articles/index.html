@@ -8,7 +8,7 @@
     <meta name="author" content="Артем Медведев">
     <link rel="icon" href=".././images/N.png" type="image/png">
     <title>Сохранённые статьи</title>
-    <link rel="stylesheet" href="../styles/saved-articles.b8bd95106aa0e51b1bdd.css?030c5886af4e39cde600" type="text/css">
+    <link rel="stylesheet" href="../styles/saved-articles.c4e42b55d108395a3984.css?247e65b1e05123ea630f" type="text/css">
 </head>
 <body>
     <header class="header">
@@ -35,16 +35,16 @@
         </section>
 
         <section class="articles">
-            <div class="cards__container">
+            <div class="cards">
 
                 <a class="cards__card" href="https://zen.yandex.ru" target="_blank">
                     <picture class="cards__picture">
                         <img class="cards__image" src=".././images/saved_01.png" alt="Национальное достояние – парки">
                     </picture>
                     <div class="cards__background">
-                        <div class="cards__button cards__button_delete">
-                            <div class="cards__hint">Убрать из сохранённых</div>
-                        </div>
+                        <button class="cards__button cards__button_delete" name="delete" type="button">
+                            <span class="cards__hint">Убрать из сохранённых</span>
+                        </button>
                     </div>
                     <span class="cards__keyword">Природа</span>
                     <div class="cards__content">
@@ -60,9 +60,9 @@
                         <img class="cards__image" src=".././images/saved_02.png" alt="Лесные огоньки: история одной фотографии">
                     </picture>
                     <div class="cards__background">
-                        <div class="cards__button cards__button_delete">
-                            <div class="cards__hint">Убрать из сохранённых</div>
-                        </div>
+                        <button class="cards__button cards__button_delete" name="delete" type="button">
+                            <span class="cards__hint">Убрать из сохранённых</span>
+                        </button>
                     </div>
                     <span class="cards__keyword">Природа</span>
                     <div class="cards__content">
@@ -78,9 +78,9 @@
                         <img class="cards__image" src=".././images/saved_03.png" alt="«Первозданная тайга»: новый фотопроект Игоря Шпиленка">
                     </picture>
                     <div class="cards__background">
-                        <div class="cards__button cards__button_delete">
-                            <div class="cards__hint">Убрать из сохранённых</div>
-                        </div>
+                        <button class="cards__button cards__button_delete" name="delete" type="button">
+                            <span class="cards__hint">Убрать из сохранённых</span>
+                        </button>
                     </div>
                     <span class="cards__keyword">Тайга</span>
                     <div class="cards__content">
@@ -96,9 +96,9 @@
                         <img class="cards__image" src=".././images/saved_01.png" alt="Национальное достояние – парки">
                     </picture>
                     <div class="cards__background">
-                        <div class="cards__button cards__button_delete">
-                            <div class="cards__hint">Убрать из сохранённых</div>
-                        </div>
+                        <button class="cards__button cards__button_delete" name="delete" type="button">
+                            <span class="cards__hint">Убрать из сохранённых</span>
+                        </button>
                     </div>
                     <span class="cards__keyword">Парки</span>
                     <div class="cards__content">
@@ -114,9 +114,9 @@
                         <img class="cards__image" src=".././images/saved_02.png" alt="Лесные огоньки: история одной фотографии">
                     </picture>
                     <div class="cards__background">
-                        <div class="cards__button cards__button_delete">
-                            <div class="cards__hint">Убрать из сохранённых</div>
-                        </div>
+                        <button class="cards__button cards__button_delete" name="delete" type="button">
+                            <span class="cards__hint">Убрать из сохранённых</span>
+                        </button>
                     </div>
                     <span class="cards__keyword">Фотография</span>
                     <div class="cards__content">
@@ -132,19 +132,19 @@
 
         <div class="popup">
             <form class="popup__form" name="login" id="login" novalidate>
-                <div class="popup__close popup__close_black"></div>
+                <button class="popup__close popup__close_black" name="close" type="button"></button>
 
                 <h2 class="popup__title">Вход</h2>
 
                 <div class=popup__data>
                     <div class="popup__field">
                         <label class="popup__label" for="login-email">Email</label>
-                        <input class="popup__input" name="email" id="login-email" type="email" placeholder="Введите почту" required>
+                        <input class="popup__input" name="email" id="login-email" type="email" placeholder="Введите почту" pattern="\w+@\w+\.\w+" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
                         <label class="popup__label" for="login-password">Пароль</label>
-                        <input class="popup__input" name="password" type="password" id="login-password" placeholder="Введите пароль" required>
+                        <input class="popup__input" name="password" type="password" id="login-password" placeholder="Введите пароль" minlength="6" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <span class="popup__error popup__error_active popup__error_server">На сервере произошла ошибка</span>
@@ -156,24 +156,24 @@
 
         <div class="popup">
             <form class="popup__form" name="signup" id="signup" novalidate>
-                <div class="popup__close popup__close_black"></div>
+                <button class="popup__close popup__close_black" name="close" type="button"></button>
 
                 <h2 class="popup__title">Регистрация</h2>
 
                 <div class=popup__data>
                     <div class="popup__field">
                         <label class="popup__label" for="signup-email">Email</label>
-                        <input class="popup__input" name="email" id="signup-email" type="email" placeholder="Введите почту" required>
+                        <input class="popup__input" name="email" id="signup-email" type="email" placeholder="Введите почту" pattern="\w+@\w+\.\w+" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
                         <label class="popup__label" for="signup-password">Пароль</label>
-                        <input class="popup__input" name="password" id="signup-password" type="password" placeholder="Введите пароль" required>
+                        <input class="popup__input" name="password" id="signup-password" type="password" placeholder="Введите пароль" minlength="6" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <div class="popup__field">
                         <label class="popup__label" for="signup-name">Имя</label>
-                        <input class="popup__input" name="name" id="signup-name" type="text" placeholder="Введите своё имя" required>
+                        <input class="popup__input" name="name" id="signup-name" type="text" placeholder="Введите своё имя" minlength="2" maxlength="30" required>
                         <span class="popup__error popup__error_active">Неправильный формат</span>
                     </div>
                     <span class="popup__error popup__error_active popup__error_server">На сервере произошла ошибка</span>
@@ -183,7 +183,7 @@
             </form>
             
             <div class="popup__form popup__form_success popup__form_hidden">
-                <div class="popup__close popup__close_black"></div>
+                <button class="popup__close popup__close_black" name="close" type="button"></button>
                 <h2 class="popup__title">Пользователь успешно зарегистрирован!</h2>
                 <span class="popup__switch popup__switch_success"><a class="popup__link popup__link_success">Выполнить вход</a></span>
             </div>
@@ -206,6 +206,6 @@
         </nav>
     </footer>
 
-    <script src="../saved-articles/saved-articles.041355a987270370bba3.js?030c5886af4e39cde600"></script>
+    <script src="../saved-articles/saved-articles.041355a987270370bba3.js?247e65b1e05123ea630f"></script>
 </body>
 </html>
