@@ -1,0 +1,26 @@
+@import url('__form/search__form.css');
+@import url('__input/search__input.css');
+@import url('__content/search__content.css');
+
+.search {
+    background-image: url('../../images/backgroung.png');
+    background-size: cover;
+    padding: 160px 0 80px;
+    margin: 0 auto;
+    max-width: 1440px;
+    box-sizing: border-box;
+    color: white;
+}
+
+@media screen and (max-width: 1023px) {
+    .search {
+        padding: 104px 0 48px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .search {
+        padding: 86px 16px 32px;
+        min-width: 320px;
+    }
+}

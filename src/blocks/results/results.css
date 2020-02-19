@@ -1,0 +1,31 @@
+@import url('__loading/results__loading.css');
+@import url('__found/results__found.css');
+@import url('__not-found/results__not-found.css');
+@import url('__icon/results__icon.css');
+@import url('__text/results__text.css');
+
+.results {
+    padding: 80px 0;
+    background-color: #F5F6F7;
+    text-align: center;
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.results_none {
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    .results {
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .results {
+        padding: 32px 0;
+        min-width: 320px;
+    }
+}

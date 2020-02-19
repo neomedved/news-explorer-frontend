@@ -1,0 +1,12 @@
+.title_info {
+    padding-top: 28px;
+    width: 530px;
+}
+
+@media screen and (max-width: 1023px) {
+    .title_info {
+        padding-top:  16px;
+        max-width: 336px;
+        width: 100%;
+    }
+}

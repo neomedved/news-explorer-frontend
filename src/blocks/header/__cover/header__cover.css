@@ -1,0 +1,16 @@
+.header__cover {
+    display: none;
+}
+
+@media screen and (max-width: 719px) {
+    .header__cover {
+        display: block;
+        height: 56px;
+        box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+        position: absolute;
+        top: -56px;
+        left: 0;
+        right: 0;
+        background-color: #1A1B22;
+    }
+}

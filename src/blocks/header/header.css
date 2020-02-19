@@ -1,0 +1,73 @@
+@import url('__logo/header__logo.css');
+@import url('__nav/header__nav.css');
+@import url('__link/header__link.css');
+@import url('__login/header__login.css');
+@import url('__icon/header__icon.css');
+@import url('__user/header__user.css');
+@import url('__background/header__background.css');
+@import url('__menu/header__menu.css');
+@import url('__cover/header__cover.css');
+@import url('__close/header__close.css');
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 104px;
+    height: 80px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 1px solid #d1d2d6;
+    border-top: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .header {
+        border-left: none;
+        border-right: none;
+    }
+
+}
+
+.header_white {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border: none;
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 1023px) {
+    .header {
+        padding: 0 40px;
+        height: 66px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 0 16px;
+        height: 56px;
+        font-size: 18px;
+        min-width: 320px;
+        z-index: 1;
+    }
+
+    .header_white {
+        position: absolute;
+        background-color: transparent;
+    }
+}

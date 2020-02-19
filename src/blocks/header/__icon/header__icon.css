@@ -1,0 +1,17 @@
+.header__icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url('../../../images/logout_black.svg');
+    background-size: cover;
+    margin: 0 0 0 4px;
+    padding: 0;
+}
+
+.header__icon_white {
+    background-image: url('../../../images/logout_white.svg');
+}
+
+.header__icon_unauthorized {
+    display: none;
+}

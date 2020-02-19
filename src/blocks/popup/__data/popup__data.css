@@ -1,0 +1,11 @@
+.popup__data {
+    padding: 22px 0 39px;
+    margin: 0;
+    position: relative;
+}
+
+@media screen and (max-width: 719px) {
+    .popup__data {
+        padding-bottom: 23px;
+    }
+}

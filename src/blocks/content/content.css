@@ -1,0 +1,22 @@
+@import url('_author/content_author.css');
+@import url('_info/content_info.css');
+@import url('__bold/content__bold.css');
+@import url('_search/content_search.css');
+
+.content {
+    display: block;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.content_results {
+    width: 300px;
+    margin: 0 auto;
+    color: #B6BCBF;
+}

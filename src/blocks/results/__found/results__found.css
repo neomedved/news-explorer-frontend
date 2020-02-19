@@ -1,0 +1,23 @@
+.results__found {
+    padding: 0 104px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: left;
+    display: none;
+}
+
+.results_found .results__found {
+    display: block;
+}
+
+@media screen and (max-width: 1023px) {
+    .results__found {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .results__found {
+        padding: 0 16px;
+    }
+}

@@ -1,0 +1,19 @@
+.info {
+    margin: 0 auto;
+    padding: 40px 104px 56px;
+    box-sizing: border-box;
+    max-width: 1440px;
+}
+
+@media screen and (max-width: 1023px) {
+    .info {
+        padding: 24px 40px 32px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .info {
+        padding: 64px 16px 32px;
+        min-width: 320px;
+    }
+}

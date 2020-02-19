@@ -1,0 +1,19 @@
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 719px) {
+    .header__nav {
+        background-color: white;
+        flex-direction: column;
+        padding: 16px 16px 24px;
+        cursor: auto;
+    }
+
+    .header__nav_white {
+        background-color: #1A1B22;
+    }
+}

@@ -1,0 +1,9 @@
+.popup__field {
+    position: relative;
+    margin: 0;
+    padding: 30px 0 0;
+}
+
+.popup__field:first-of-type {
+    padding: 0;
+}

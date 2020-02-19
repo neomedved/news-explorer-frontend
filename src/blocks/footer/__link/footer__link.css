@@ -1,0 +1,16 @@
+.footer__link {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    color: inherit;
+    text-decoration: none;
+    margin: 0;
+    padding: 0 18px 0;
+    outline: none;
+}
+
+@media screen and (max-width: 719px) {
+    .footer__link {
+        padding: 0;
+    }
+}

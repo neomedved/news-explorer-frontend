@@ -1,0 +1,12 @@
+.footer__nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 719px) {
+    .footer__nav {
+        justify-content: space-between;
+    }
+}

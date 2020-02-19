@@ -1,0 +1,30 @@
+@import url('__card/cards__card.css');
+@import url('__content/cards__content.css');
+@import url('__text/cards__text.css');
+@import url('__source/cards__source.css');
+@import url('__picture/cards__picture.css');
+@import url('__image/cards__image.css');
+@import url('__keyword/cards__keyword.css');
+@import url('__button/cards__button.css');
+@import url('__hint/cards__hint.css');
+@import url('__background/cards__background.css');
+@import url('_search/cards_search.css');
+
+.cards {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 719px) {
+    .cards {
+        flex-direction: column;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}

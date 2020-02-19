@@ -1,0 +1,27 @@
+.cards__keyword {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    margin: 0;
+    padding: 8px 17px;
+    background-color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+    .cards__keyword {
+        top: 8px;
+        left: 8px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .cards__keyword {
+        top: 16px;
+        left: 16px;
+    }
+}
