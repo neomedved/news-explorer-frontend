@@ -43,12 +43,28 @@ module.exports = {
       hash: true,
       template: './src/html/index.html',
       filename: 'index.html',
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
     }),
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
       template: './src/html/saved-articles/index.html',
       filename: 'saved-articles/index.html',
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
     }),
     new OptimizeCssAssetsPlugin({
       cssProcessorPluginOptions: {
