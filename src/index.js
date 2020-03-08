@@ -17,26 +17,28 @@ const mainApi = new MainApi({
 
 let form;
 let popup;
+let header;
 
 const formHandlers = [{
   event: 'submit',
   callback: (event) => {
     event.preventDefault();
-    if (event.target.name === 'login') {
+    if (event.currentTarget.name === 'login') {
       const { email, password } = form.getInfo();
       mainApi.login(email, password)
         .then((data) => {
           localStorage.setItem('jwt', data.jwt);
-          popup.close();
+          popup.setContent('success');
         })
         .catch(() => {
           document.querySelector('.popup__error_server').classList.add('popup__error_active');
         });
-    } else if (event.target.name === 'signup') {
+    } else if (event.currentTarget.name === 'signup') {
       const { name, email, password } = form.getInfo();
       mainApi.signup(name, email, password)
         .then(() => {
           popup.close();
+          header.render({ isLoggedIn: token });
         })
         .catch(() => {
           document.querySelector('.popup__error_server').classList.add('popup__error_active');
@@ -68,7 +70,7 @@ popup = new Popup('.popup', [
   },
 ]);
 
-const header = new Header('.header', [
+header = new Header('.header', [
   {
     event: 'click',
     callback: (event) => {
@@ -81,4 +83,4 @@ const header = new Header('.header', [
   },
 ]);
 
-header.render({ token });
+header.render({ isLoggedIn: token });

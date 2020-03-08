@@ -3,11 +3,11 @@ import BaseComponent from './BaseComponent';
 export default class Form extends BaseComponent {
   getInfo() {
     const info = {
-      email: this.element.elements.email.value,
-      password: this.element.elements.password.value,
+      email: this._element.elements.email.value,
+      password: this._element.elements.password.value,
     };
-    if (this.element.name === 'signup') {
-      info.name = this.element.elements.name.value;
+    if (this._element.name === 'signup') {
+      info.name = this._element.elements.nickname.value;
     }
     return info;
   }

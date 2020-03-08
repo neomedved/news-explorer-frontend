@@ -38,7 +38,7 @@ const POPUP_SIGNUP = `<form class="popup__form" name="signup" id="signup" novali
         </div>
         <div class="popup__field">
             <label class="popup__label" for="signup-name">Имя</label>
-            <input class="popup__input" name="name" id="signup-name" type="text" placeholder="Введите своё имя" minlength="2" maxlength="30" required>
+            <input class="popup__input" name="nickname" id="signup-name" type="text" placeholder="Введите своё имя" minlength="2" maxlength="30" required>
             <span class="popup__error ">Неправильный формат имени</span>
         </div>
         <span class="popup__error popup__error_server">Такой пользователь уже есть</span>
