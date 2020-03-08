@@ -21,7 +21,7 @@
                     <div class="header__cover"></div>
                     <a class="header__link header__link_active header__link_white" href="index.html">Главная</a>
                     <a class="header__link header__link_white" href="saved-articles/index.html">Сохранённые статьи</a>
-                    <a class="header__login header__login_white" href="saved-articles/index.html"><span class="header__user">Артем</span><div class="header__icon header__icon_white"></div></a>
+                    <button class="header__login header__login_white" type="button"><span class="header__user">Артем</span><div class="header__icon header__icon_white"></div></button>
                 </nav>
             </div>
         </div>
@@ -40,7 +40,7 @@
             </div>
         </section>
 
-        <section class="results results_found">
+        <section class="results">
 
             <div class="results__found">
 
@@ -133,70 +133,12 @@
             </div>
         </section>
 
-        <div class="popup">
-            <form class="popup__form" name="login" id="login" novalidate>
-                <button class="popup__close" name="close" type="button"></button>
-
-                <h2 class="popup__title">Вход</h2>
-
-                <div class=popup__data>
-                    <div class="popup__field">
-                        <label class="popup__label" for="login-email">Email</label>
-                        <input class="popup__input" name="email" id="login-email" type="email" placeholder="Введите почту" pattern="\w+@\w+\.\w+" required>
-                        <span class="popup__error popup__error_active">Неправильный формат</span>
-                    </div>
-                    <div class="popup__field">
-                        <label class="popup__label" for="login-password">Пароль</label>
-                        <input class="popup__input" name="password" id="login-password" type="password" placeholder="Введите пароль" minlength="6" required>
-                        <span class="popup__error popup__error_active">Неправильный формат</span>
-                    </div>
-                    <span class="popup__error popup__error_active popup__error_server">На сервере произошла ошибка</span>
-                </div>
-                <button class="button button_popup" name="button" id="login-button" type="submit">Войти</button>
-                <span class="popup__switch">или <a class="popup__link">Зарегистрироваться</a></span>
-            </form>
-        </div>
-
-        <div class="popup">
-            <form class="popup__form" name="signup" id="signup" novalidate>
-                <button class="popup__close" name="close" type="button"></button>
-
-                <h2 class="popup__title">Регистрация</h2>
-
-                <div class=popup__data>
-                    <div class="popup__field">
-                        <label class="popup__label" for="signup-email">Email</label>
-                        <input class="popup__input" name="email" id="signup-email" type="email" placeholder="Введите почту" pattern="\w+@\w+\.\w+" required>
-                        <span class="popup__error popup__error_active">Неправильный формат</span>
-                    </div>
-                    <div class="popup__field">
-                        <label class="popup__label" for="signup-password">Пароль</label>
-                        <input class="popup__input" name="password" id="signup-password" type="password" placeholder="Введите пароль" minlength="6" required>
-                        <span class="popup__error popup__error_active">Неправильный формат</span>
-                    </div>
-                    <div class="popup__field">
-                        <label class="popup__label" for="signup-name">Имя</label>
-                        <input class="popup__input" name="name" id="signup-name" type="text" placeholder="Введите своё имя" minlength="2" maxlength="30" required>
-                        <span class="popup__error popup__error_active">Неправильный формат</span>
-                    </div>
-                    <span class="popup__error popup__error_active popup__error_server">На сервере произошла ошибка</span>
-                </div>
-                <button class="button button_popup" name="button" id="signup-button" type="submit">Зарегистрироваться</button>
-                <span class="popup__switch">или <a class="popup__link">Войти</a></span>
-            </form>
-            
-            <div class="popup__form popup__form_success popup__form_hidden">
-                <button class="popup__close" name="close" type="button"></button>
-                <h2 class="popup__title">Пользователь успешно зарегистрирован!</h2>
-                <span class="popup__switch popup__switch_success"><a class="popup__link popup__link_success">Выполнить вход</a></span>
-            </div>
-            
-        </div>
+        <div class="popup"></div>
 
     </main>
 
     <footer class="footer">
-        <h2 class="footer__copyright">&copy; 2020 Артем Медведев, Powered by News API</h2>
+        <h2 class="footer__copyright">&copy; 2020 Артем Медведев, <a href="https://newsapi.org" target="_blank" class="footer__api">Powered by News API</a></h2>
         <nav class="footer__nav">
             <div class="footer__links">
                 <a class="footer__link" href="index.html">Главная</a>

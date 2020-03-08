@@ -4,6 +4,7 @@
 @import url('__nav/footer__nav.css');
 @import url('__social/footer__social.css');
 @import url('__links/footer__links.css');
+@import url('__api/fooetr__api.css');
 
 .footer {
     display: flex;
