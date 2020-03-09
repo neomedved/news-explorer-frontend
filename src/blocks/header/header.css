@@ -6,8 +6,6 @@
 @import url('__user/header__user.css');
 @import url('__background/header__background.css');
 @import url('__menu/header__menu.css');
-@import url('__cover/header__cover.css');
-@import url('__close/header__close.css');
 
 .header {
     display: flex;
@@ -69,5 +67,13 @@
     .header_white {
         position: absolute;
         background-color: transparent;
+    }
+
+    .header_dropdown {
+        background-color: #1A1B22;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 }

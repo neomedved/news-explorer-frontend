@@ -5,9 +5,11 @@ export default class MainApi {
   }
 
   template(url, method, body) {
+    const { headers } = this;
+    headers.authorization = `Bearer ${localStorage.getItem('jwt')}`;
     return fetch(`${this.baseUrl}/${url}`, {
       method,
-      headers: this.headers,
+      headers,
       body: method === 'GET' ? undefined : JSON.stringify(body),
     })
       .then((res) => {
@@ -19,7 +21,7 @@ export default class MainApi {
   }
 
   login(email, password) {
-    return this.template('login', 'POST', {
+    return this.template('signin', 'POST', {
       email, password,
     });
   }
@@ -30,7 +32,19 @@ export default class MainApi {
     });
   }
 
-  getUser() {
-    return this.template('me', 'GET');
+  getUserData() {
+    return this.template('users/me', 'GET');
+  }
+
+  getArticles() {
+    return this.template('articles', 'GET');
+  }
+
+  createArticle(article) {
+    return this.template('articles', 'POST', article);
+  }
+
+  removeArticle(id) {
+    return this.template(`articles/${id}`, 'DELETE');
   }
 }

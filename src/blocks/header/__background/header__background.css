@@ -9,7 +9,7 @@
         height: 100vh;
     }
 
-    .header__menu:hover .header__background {
+    .header__background_dropdown {
         display: block;
     }
 }

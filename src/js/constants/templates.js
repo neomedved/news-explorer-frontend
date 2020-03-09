@@ -1,5 +1,5 @@
 const POPUP_LOGIN = `<form class="popup__form" name="login" id="login" novalidate>
-    <button class="popup__close popup__close_black" name="close" type="button"></button>
+    <button class="popup__close" name="close" type="button"></button>
 
     <h2 class="popup__title">Вход</h2>
 
@@ -14,7 +14,7 @@ const POPUP_LOGIN = `<form class="popup__form" name="login" id="login" novalidat
             <input class="popup__input" name="password" type="password" id="login-password" placeholder="Введите пароль" minlength="6" required>
             <span class="popup__error">Неправильный формат пароля</span>
         </div>
-        <span class="popup__error popup__error_server">Неправильные email и пароль</span>
+        <span class="popup__error popup__error_server">Не удалось войти</span>
     </div>
     <button class="button button_popup" name="button" id="login-button" type="submit">Войти</button>
     <span class="popup__switch">или <a class="popup__link popup__link_signup">Зарегистрироваться</a></span>
@@ -41,7 +41,7 @@ const POPUP_SIGNUP = `<form class="popup__form" name="signup" id="signup" novali
             <input class="popup__input" name="nickname" id="signup-name" type="text" placeholder="Введите своё имя" minlength="2" maxlength="30" required>
             <span class="popup__error ">Неправильный формат имени</span>
         </div>
-        <span class="popup__error popup__error_server">Такой пользователь уже есть</span>
+        <span class="popup__error popup__error_server">Не удалось создать пользователя</span>
     </div>
     <button class="button button_popup" name="button" id="signup-button" type="submit">Зарегистрироваться</button>
     <span class="popup__switch">или <a class="popup__link popup__link_login">Войти</a></span>

@@ -11,7 +11,7 @@
         cursor: pointer;
     }
 
-    .header__menu:hover {
+    .header__menu_dropdown {
         background-image: url('../../../images/cross_black.svg');
     }
 
@@ -19,7 +19,7 @@
         background-image: url('../../../images/menu_white.svg');
     }
 
-    .header__menu_white:hover {
+    .header__menu_white-dropdown {
         background-image: url('../../../images/cross.svg');
     }
 }

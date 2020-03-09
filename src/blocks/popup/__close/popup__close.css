@@ -27,10 +27,10 @@
         height: 24px;
         right: 16px;
         top: -40px;
-        background-color: black;
+        background-color: #1A1B22;
     }
 
-    .popup__close_black {
+    .popup_black .popup__close {
         background-image: url('../../../images/cross_black.svg');
         background-color: white;
     }
