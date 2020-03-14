@@ -10,6 +10,8 @@
     font-size: 14px;
     line-height: 24px;
     border-radius: 10px;
+    max-width: 100px;
+    text-overflow: ellipsis;
 }
 
 .cards__keyword_search {

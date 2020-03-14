@@ -13,10 +13,12 @@ export default class NewsCardList extends BaseComponent {
   initResults(cards) {
     this._clearResults();
     if (this._type === 'saved') {
+      this._element.classList.remove('articles_none');
       this._renderResults(cards);
     } else if (this._type === 'search') {
       this._restCards = cards;
       this.showMore();
+      this._element.className = `${this._className} results_found`;
     }
   }
 
@@ -41,7 +43,6 @@ export default class NewsCardList extends BaseComponent {
     results.forEach((element) => {
       this._addCard(element);
     });
-    this._element.className = `${this._className} results_found`;
   }
 
   renderLoader() {
@@ -66,7 +67,8 @@ export default class NewsCardList extends BaseComponent {
     return this._cards.find((item) => element.isSameNode(item.getElement()));
   }
 
-  removeCard(index) {
+  removeCard(card) {
+    const index = this._cards.indexOf(card);
     this._cardsElement.removeChild(this._cards[index].getElement());
     this._cards.splice(index, 1);
   }

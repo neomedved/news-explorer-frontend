@@ -11,6 +11,18 @@ export default class Form extends BaseComponent {
     }, {});
   }
 
+  disable() {
+    this._element.elements.forEach((item) => {
+      item.setAttribute('disabled', '');
+    });
+  }
+
+  enable() {
+    this._element.elements.forEach((item) => {
+      item.removeAttribute('disabled');
+    });
+  }
+
   setServerError() {
     this._element.querySelector('.popup__error_server').classList.add('popup__error_active');
   }

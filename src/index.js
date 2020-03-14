@@ -41,25 +41,27 @@ const newsCardList = new NewsCardList('.results', 'search', [
     callback: (event) => {
       if (event.target.classList.contains('cards__button')) {
         event.preventDefault();
-        const card = newsCardList.findCard(event.target.parentNode.parentNode);
-        if (event.target.classList.contains('cards__button_save')) {
-          mainApi.createArticle(card.getData())
-            .then((data) => {
-              card.addId(data.articleId);
-              card.renderIcon('bookmarked');
-            })
-            .catch(() => {
-              card.renderIcon('error');
-            });
-        } else if (event.target.classList.contains('cards__button_saved')) {
-          mainApi.removeArticle(card.getData().articleId)
-            .then(() => {
-              card.removeId();
-              card.renderIcon('search');
-            })
-            .catch(() => {
-              card.renderIcon('error');
-            });
+        if (localStorage.getItem('jwt')) {
+          const card = newsCardList.findCard(event.target.parentNode.parentNode);
+          if (event.target.classList.contains('cards__button_save')) {
+            mainApi.createArticle(card.getData())
+              .then((data) => {
+                card.addId(data.articleId);
+                card.renderIcon('bookmarked');
+              })
+              .catch(() => {
+                card.renderIcon('error');
+              });
+          } else if (event.target.classList.contains('cards__button_saved')) {
+            mainApi.removeArticle(card.getData().articleId)
+              .then(() => {
+                card.removeId();
+                card.renderIcon('search');
+              })
+              .catch(() => {
+                card.renderIcon('error');
+              });
+          }
         }
       }
     },
@@ -72,6 +74,7 @@ const popupFormHandlers = [
     callback: (event) => {
       event.preventDefault();
       if (event.target.checkValidity()) {
+        popupForm.disable();
         if (event.target.name === 'login') {
           const { email, password } = popupForm.getInfo();
           mainApi.login(email, password)
@@ -80,9 +83,11 @@ const popupFormHandlers = [
               updateHeader(header, mainApi);
               newsCardList.authorization();
               popup.close();
+              popupForm.enable();
             })
             .catch(() => {
               popupForm.setServerError();
+              popupForm.enable();
             });
         } else if (event.target.name === 'signup') {
           const { name, email, password } = popupForm.getInfo();
@@ -92,6 +97,7 @@ const popupFormHandlers = [
             })
             .catch(() => {
               popupForm.setServerError();
+              popupForm.enable();
             });
         }
       }
