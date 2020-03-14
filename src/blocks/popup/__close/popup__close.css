@@ -29,9 +29,4 @@
         top: -40px;
         background-color: #1A1B22;
     }
-
-    .popup_black .popup__close {
-        background-image: url('../../../images/cross_black.svg');
-        background-color: white;
-    }
 }

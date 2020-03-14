@@ -12,6 +12,10 @@
     border-radius: 10px;
 }
 
+.cards__keyword_search {
+    display: none;
+}
+
 @media screen and (max-width: 1023px) {
     .cards__keyword {
         top: 8px;

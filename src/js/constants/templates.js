@@ -53,4 +53,27 @@ const POPUP_SUCCESS = `<div class="popup__form popup__form_success">
     <span class="popup__switch popup__switch_success"><a class="popup__link popup__link_success">Выполнить вход</a></span>
 </div>`;
 
-export { POPUP_LOGIN, POPUP_SIGNUP, POPUP_SUCCESS };
+const CARD = `<a class="cards__card" target="_blank">
+    <picture class="cards__picture">
+        <img class="cards__image">
+    </picture>
+    <div class="cards__background">
+        <div class="cards__button">
+            <span class="cards__hint"></span>
+        </div>
+    </div>
+    <span class="cards__keyword"></span>
+    <div class="cards__content">
+        <span class="subtitle"></span>
+        <h3 class="caption caption_cards"></h3>
+        <p class="cards__text"></p>
+    </div>
+    <span class="cards__source"></span>
+</a>`;
+
+export {
+  POPUP_LOGIN,
+  POPUP_SIGNUP,
+  POPUP_SUCCESS,
+  CARD,
+};

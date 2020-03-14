@@ -5,8 +5,10 @@ export default class BaseComponent {
   }
 
   _setHandlers(handlers) {
-    handlers.forEach((el) => {
-      this._element.addEventListener(el.event, el.callback);
-    });
+    if (Array.isArray(handlers)) {
+      handlers.forEach((el) => {
+        this._element.addEventListener(el.event, el.callback);
+      });
+    }
   }
 }

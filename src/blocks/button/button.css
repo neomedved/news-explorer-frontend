@@ -50,6 +50,10 @@ form:invalid .button_search {
     opacity: 0.9;
 }
 
+.button_results-no-more {
+    display: none;
+}
+
 @media screen and (max-width: 1023px) {
     .button_search {
         padding: 17px 0;

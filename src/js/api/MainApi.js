@@ -1,13 +1,13 @@
 export default class MainApi {
   constructor(options) {
-    this.baseUrl = options.baseUrl;
-    this.headers = options.headers;
+    this._baseUrl = options.baseUrl;
+    this._headers = options.headers;
   }
 
   _template(url, method, body) {
-    const { headers } = this;
+    const headers = this._headers;
     headers.authorization = `Bearer ${localStorage.getItem('jwt')}`;
-    return fetch(`${this.baseUrl}/${url}`, {
+    return fetch(`${this._baseUrl}/${url}`, {
       method,
       headers,
       body: method === 'GET' ? undefined : JSON.stringify(body),
@@ -16,7 +16,7 @@ export default class MainApi {
         if (res.ok) {
           return res.json();
         }
-        return Promise.reject(new Error(`Ошибка: ${res.status}`));
+        return Promise.reject(new Error(`{ status: ${res.status}, response: ${res.json()} }`));
       });
   }
 

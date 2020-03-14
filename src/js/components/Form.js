@@ -2,13 +2,16 @@ import BaseComponent from './BaseComponent';
 
 export default class Form extends BaseComponent {
   getInfo() {
-    const info = {
-      email: this._element.elements.email.value,
-      password: this._element.elements.password.value,
-    };
-    if (this._element.name === 'signup') {
-      info.name = this._element.elements.nickname.value;
-    }
-    return info;
+    return [...this._element.elements].reduce((prev, item) => {
+      const next = prev;
+      if (item.nodeName === 'INPUT') {
+        next[item.name] = item.value;
+      }
+      return next;
+    }, {});
+  }
+
+  setServerError() {
+    this._element.querySelector('.popup__error_server').classList.add('popup__error_active');
   }
 }
