@@ -1,32 +1,32 @@
-import BaseComponent from './BaseComponent';
-import NewsCard from './NewsCard';
+import BaseComponent from '../../js/components/BaseComponent';
+import { CARDS_PER_LINE } from '../../js/constants/magic-values';
 
 export default class NewsCardList extends BaseComponent {
-  constructor(selector, type, handlers) {
+  constructor(selector, cardContent, createCard, handlers) {
     super(selector, handlers);
-    this._type = type;
+    this._cardContent = cardContent;
     this._cards = [];
     this._cardsElement = this._element.querySelector('.cards');
-    this._className = selector.slice(1);
+    this._createCard = createCard;
   }
 
   initResults(cards) {
     this._clearResults();
-    if (this._type === 'saved') {
-      this._element.classList.remove('articles_none');
-      this._renderResults(cards);
-    } else if (this._type === 'search') {
-      this._restCards = cards;
-      this.showMore();
-      this._element.className = `${this._className} results_found`;
-    }
+    this._restCards = cards;
+    this.showMore();
+    this._element.className = 'results results_found';
+  }
+
+  renderSavedArticles(cards) {
+    this._element.classList.remove('articles_none');
+    this._renderResults(cards);
   }
 
   showMore() {
-    this._renderResults(this._restCards.slice(0, Math.min(3, this._restCards.length)));
+    this._renderResults(this._restCards.slice(0, Math.min(CARDS_PER_LINE, this._restCards.length)));
     const button = this._element.querySelector('.button_results');
-    if (this._restCards.length > 3) {
-      this._restCards = this._restCards.slice(3);
+    if (this._restCards.length > CARDS_PER_LINE) {
+      this._restCards = this._restCards.slice(CARDS_PER_LINE);
       button.classList.remove('button_results-no-more');
     } else {
       button.classList.add('button_results-no-more');
@@ -46,19 +46,19 @@ export default class NewsCardList extends BaseComponent {
   }
 
   renderLoader() {
-    this._element.className = `${this._className} results_loading`;
+    this._element.className = 'results results_loading';
     this._clearResults();
   }
 
   renderError(title, message) {
     this._element.querySelector('.results__not-found .caption_search').textContent = title;
     this._element.querySelector('.results__not-found .content_results').textContent = message;
-    this._element.className = `${this._className} results_not-found`;
+    this._element.className = 'results results_not-found';
     this._clearResults();
   }
 
   _addCard(data) {
-    const newCard = new NewsCard(data, this._type);
+    const newCard = this._createCard(data, this._cardContent);
     this._cards.push(newCard);
     this._cardsElement.appendChild(newCard.getElement());
   }

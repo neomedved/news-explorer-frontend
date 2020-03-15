@@ -34,7 +34,7 @@ export default function renderSavedArticles(mainApi, newsCardList) {
               spans[2].textContent = `${keywords.length - 2} другим`;
             }
 
-            newsCardList.initResults(articles);
+            newsCardList.renderSavedArticles(articles);
           }
         });
     })

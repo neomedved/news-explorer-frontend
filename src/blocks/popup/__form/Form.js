@@ -1,4 +1,4 @@
-import BaseComponent from './BaseComponent';
+import BaseComponent from '../../../js/components/BaseComponent';
 
 export default class Form extends BaseComponent {
   getInfo() {
@@ -25,5 +25,13 @@ export default class Form extends BaseComponent {
 
   setServerError() {
     this._element.querySelector('.popup__error_server').classList.add('popup__error_active');
+  }
+
+  isValid() {
+    return this._element.checkValidity();
+  }
+
+  static elementIsValid(element) {
+    return element.checkValidity();
   }
 }

@@ -1,10 +1,12 @@
 import '../pages/saved-articles/index.css';
-import Header from '../js/components/Header';
+import Header from '../blocks/header/Header';
 import MainApi from '../js/api/MainApi';
 import { MAIN_API_URL } from '../js/constants/config';
 import updateHeader from '../js/utils/update-header';
-import NewsCardList from '../js/components/NewsCardList';
+import NewsCardList from '../blocks/cards/NewsCardList';
 import renderSavedArticles from '../js/utils/render-saved-articles';
+import createCard from '../js/utils/create-card';
+import { CARD_SAVED } from '../js/constants/templates';
 
 
 const mainApi = new MainApi({
@@ -36,7 +38,7 @@ const header = new Header('.header', [
   },
 ]);
 
-const newsCardList = new NewsCardList('.articles', 'saved', [
+const newsCardList = new NewsCardList('.articles', CARD_SAVED, createCard, [
   {
     event: 'click',
     callback: (event) => {
@@ -51,7 +53,7 @@ const newsCardList = new NewsCardList('.articles', 'saved', [
             }
           })
           .catch(() => {
-            card.renderIcon('error');
+            card.renderError();
           });
       }
     },

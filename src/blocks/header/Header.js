@@ -1,4 +1,4 @@
-import BaseComponent from './BaseComponent';
+import BaseComponent from '../../js/components/BaseComponent';
 
 export default class Header extends BaseComponent {
   render(props) {
