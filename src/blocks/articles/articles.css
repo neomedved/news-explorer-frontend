@@ -6,6 +6,10 @@
     background-color: #F5F6F7;
 }
 
+.articles_none {
+    display: none;
+}
+
 @media screen and (max-width: 1023px) {
     .articles {
         padding: 32px 40px;

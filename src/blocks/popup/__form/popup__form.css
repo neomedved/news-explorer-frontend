@@ -7,10 +7,6 @@
     position: relative;
 }
 
-.popup__form_hidden {
-    display: none;
-}
-
 .popup__form_success {
     padding: 43px 35px 51px;
 }
@@ -23,5 +19,7 @@
         height: 100%;
         min-width: 320px;
         padding: 16px 17px 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
 }

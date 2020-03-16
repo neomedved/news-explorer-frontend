@@ -27,11 +27,6 @@
         height: 24px;
         right: 16px;
         top: -40px;
-        background-color: black;
-    }
-
-    .popup__close_black {
-        background-image: url('../../../images/cross_black.svg');
-        background-color: white;
+        background-color: #1A1B22;
     }
 }

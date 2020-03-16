@@ -1,3 +1,5 @@
+@import url('_error/cards__background_error.css');
+
 .cards__background {
     position: absolute;
     right: 24px;

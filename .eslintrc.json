@@ -15,6 +15,7 @@
         "sourceType": "module"
     },
     "rules": {
-        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+        "no-underscore-dangle": ["error", { "enforceInMethodNames": false, "allowAfterThis": true, "allow": ["_id"] }]
     }
 }
