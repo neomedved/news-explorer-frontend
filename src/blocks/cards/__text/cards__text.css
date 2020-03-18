@@ -6,10 +6,17 @@
     line-height: 22px;
     margin: 0;
     padding: 16px 0 0;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 1023px) {
     .cards__text {
         padding-top: 10px;
+
+        -webkit-line-clamp: 4;
     }
 }
