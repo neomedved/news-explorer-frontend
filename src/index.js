@@ -23,7 +23,9 @@ const mainApi = new MainApi({
 const newsApi = new NewsApi({
   baseUrl: NEWS_API_URL,
   key: NEWS_API_KEY,
-  headers: {},
+  headers: {
+    'Content-Type': 'application/json',
+  },
 });
 
 let popupForm;
@@ -86,10 +88,11 @@ const popupFormHandlers = [
               updateHeader(header, mainApi);
               newsCardList.authorization();
               popup.close();
-              popupForm.enable();
             })
             .catch(() => {
               popupForm.setServerError();
+            })
+            .finally(() => {
               popupForm.enable();
             });
         } else if (event.target.name === 'signup') {
@@ -194,14 +197,14 @@ const searchForm = new Form('.search__form', [
             ));
             if (cards.length) {
               newsCardList.initResults(cards);
-              searchForm.enable();
             } else {
               newsCardList.renderError('Ничего не найдено', 'К сожалению по вашему запросу ничего не найдено.');
-              searchForm.enable();
             }
           })
           .catch(() => {
             newsCardList.renderError('Во время запроса произошла ошибка', 'Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.');
+          })
+          .finally(() => {
             searchForm.enable();
           });
       } else {
