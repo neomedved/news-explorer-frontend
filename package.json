@@ -1,6 +1,6 @@
 {
   "name": "news-explorer-frontend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Сервис, в котором можно найти новости по запросу и сохранить в личном кабинете.",
   "dependencies": {
     "babel-polyfill": "6.26.0",
