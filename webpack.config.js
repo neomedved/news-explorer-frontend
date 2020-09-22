@@ -74,6 +74,5 @@ module.exports = {
     new CssUrlRelativePlugin({}),
     new MiniCssExtractPlugin({ filename: 'styles/[name].[contenthash].css' }),
     new WebpackMd5Hash(),
-    new webpack.DefinePlugin({ NODE_ENV: JSON.stringify(process.env.NODE_ENV) }),
   ],
 };
